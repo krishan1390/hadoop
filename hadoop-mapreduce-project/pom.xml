@@ -16,7 +16,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.apache.hadoop</groupId>
+    <groupId>com.linkedin.hadoop</groupId>
     <artifactId>hadoop-project</artifactId>
     <version>3.4.0-SNAPSHOT</version>
     <relativePath>../hadoop-project</relativePath>
@@ -47,42 +47,42 @@
   -->
   <dependencies>
     <dependency>
-      <groupId>org.apache.hadoop</groupId>
+      <groupId>com.linkedin.hadoop</groupId>
       <artifactId>hadoop-mapreduce-client-app</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.apache.hadoop</groupId>
+      <groupId>com.linkedin.hadoop</groupId>
       <artifactId>hadoop-mapreduce-client-common</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.apache.hadoop</groupId>
+      <groupId>com.linkedin.hadoop</groupId>
       <artifactId>hadoop-mapreduce-client-core</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.apache.hadoop</groupId>
+      <groupId>com.linkedin.hadoop</groupId>
       <artifactId>hadoop-mapreduce-client-hs</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.apache.hadoop</groupId>
+      <groupId>com.linkedin.hadoop</groupId>
       <artifactId>hadoop-mapreduce-client-jobclient</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.apache.hadoop</groupId>
+      <groupId>com.linkedin.hadoop</groupId>
       <artifactId>hadoop-mapreduce-client-nativetask</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.apache.hadoop</groupId>
+      <groupId>com.linkedin.hadoop</groupId>
       <artifactId>hadoop-mapreduce-client-shuffle</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.apache.hadoop</groupId>
+      <groupId>com.linkedin.hadoop</groupId>
       <artifactId>hadoop-mapreduce-examples</artifactId>
       <version>${project.version}</version>
     </dependency>
@@ -203,7 +203,7 @@
             <artifactId>maven-assembly-plugin</artifactId>
             <dependencies>
               <dependency>
-                <groupId>org.apache.hadoop</groupId>
+                <groupId>com.linkedin.hadoop</groupId>
                 <artifactId>hadoop-assemblies</artifactId>
                 <version>${project.version}</version>
               </dependency>

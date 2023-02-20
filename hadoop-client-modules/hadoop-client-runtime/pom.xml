@@ -16,7 +16,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 <parent>
-   <groupId>org.apache.hadoop</groupId>
+   <groupId>com.linkedin.hadoop</groupId>
    <artifactId>hadoop-project</artifactId>
    <version>3.4.0-SNAPSHOT</version>
    <relativePath>../../hadoop-project</relativePath>
@@ -36,7 +36,7 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.apache.hadoop</groupId>
+      <groupId>com.linkedin.hadoop</groupId>
       <artifactId>hadoop-client</artifactId>
       <!-- We list this as optional because as a type-pom it won't get included in the shading.
            Marking it optional means it doesn't count as a transitive dependency of this artifact.
@@ -56,7 +56,7 @@
     </dependency>
     <!-- At runtime anyone using us must have the api present -->
     <dependency>
-      <groupId>org.apache.hadoop</groupId>
+      <groupId>com.linkedin.hadoop</groupId>
       <artifactId>hadoop-client-api</artifactId>
       <scope>runtime</scope>
     </dependency>
@@ -69,7 +69,7 @@
     <!-- This comes from our parent pom. If we don't expressly change it here to get included,
          downstream will get warnings at compile time. -->
     <dependency>
-      <groupId>org.apache.hadoop</groupId>
+      <groupId>com.linkedin.hadoop</groupId>
       <artifactId>hadoop-annotations</artifactId>
       <scope>compile</scope>
       <exclusions>
